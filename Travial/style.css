@@ -84,3 +84,119 @@ header{
   font-size: 150%;
   font-weight: bolder;
 }
+/* about */
+.about{
+  background-color: cornsilk;
+  padding: 50px 0;
+  margin: 0px;
+}
+.about h1{
+  font-weight: bolder;
+}
+.about-img{
+  height: auto;
+  width: 400px;
+}
+
+
+/* rec */
+.rec-wrapper {
+  background-color: burlywood;
+  text-align: center;
+  padding: 50px 0;
+}
+.rec-wrapper h1{
+  font-weight: bolder;
+}
+
+.recom-icon img{
+  border-radius: 10%;
+  height: 250px;
+  width: auto;
+  border: 2px solid black;
+}
+/* wish */
+.wish{
+  background-color: ivory;
+  text-align: center;
+  padding: 50px 0;
+}
+.wish-form{
+  position: relative;
+  z-index: 1;
+  background: rgba(14, 13, 13, 0.85);
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+}
+.wish-form button{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;  
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.wish-form textarea{
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.wish-form button:hover,.form button:active{
+  background: #43a047;
+}
+/* contact */
+.contact{
+  margin-top: 10%;
+  padding-top: 50px;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.contact .row{
+  padding: 30px 0;
+  font-size: 22px;
+}
+.contact .col-md-4 .fa{
+  padding: 10px;
+  font-size: 40px;
+}
+.contact .col-md-4:hover{
+  background: #000;
+  transition: 0.6s;
+}
+.contact .btn{
+  padding: 10px 25px 10px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.contact .btn a{
+  color: #fff;
+
+}
+.contact .btn:focus{
+  box-shadow: none !important;
+}
+.contact .btn:hover{
+  border: 2px solid #000 !important;
+  background: #000000 !important;
+  transition: 0.6s;
+}
+.contact .btn .fa{
+  margin-right: 10px;
+}
+
