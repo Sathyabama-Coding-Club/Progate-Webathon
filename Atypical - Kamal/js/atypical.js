@@ -13,9 +13,10 @@ function validateForm() {
 
     var admin_email = "root@atypical.com";
     var pass = "root123";
-    if(username===admin_email && password===pass){
-        alert('Login successful');
-        window.open("../admin.html");
+    if(username==admin_email && password==pass){
+        alert('Welcome Administrator!');
+        window.location = "../admin.html";
+        return false;
     }
     
 }
