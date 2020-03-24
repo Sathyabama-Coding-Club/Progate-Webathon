@@ -1,0 +1,374 @@
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(HOUSE_PLANTS/bkg11.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 8;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Add CSS for menu-icon */
+.menu-icon
+{
+  color: white;
+  float: left;
+  font-size: 25px;
+  padding: 21px 0;
+
+}
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: -200px;
+  line-height: 30px;
+  background-color: #4d8581!important;
+  overflow-x: hidden;
+  padding-top: 50px;
+transition: all .5s ease ;
+}
+.sidebar h4{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #1e2c2b;
+  text-align: center;
+  line-height: 20px;
+  user-select: none;
+}
+/* Style sidebar links */
+.sidebar a {
+  padding: 30px;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 15px;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: .5s;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: black;
+  padding-left: 50px ;
+}
+
+#check{
+  display: none;
+}
+
+label #btn,label #cancel
+{
+  position: absolute;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+label #btn
+{
+  left: 30px;
+  top: 20px;
+  font-size: 25px;
+  color: white;
+  padding: 6px 12px;
+  padding-bottom: 20px;
+  transition: all .5s;
+}
+label #cancel
+{
+  z-index: 1111;
+  left: -195px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar
+{
+  left:0;
+}
+#check:checked ~ label #btn
+{
+  left:250px;
+  opacity: 0;
+  pointer-events:none;
+}
+#check:checked ~ label #cancel
+{
+left: 195px;
+}
+
+
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+/*-----Quote-----*/
+
+.poem
+{
+    padding: 200px 0 40px 0;
+
+}
+.poem-box
+{
+    margin:30px;
+}
+.text-style p
+{
+    padding:20px;
+    font-family:'Caveat','Times New Roman', Times, serif ;
+}
+.text-style
+{
+    margin: 0 auto 80px;
+    height:120px ;
+    width: 80%;
+    max-width: 700px ;
+    background:#fff ;
+    position:relative ;
+    box-shadow: 0 4px 5px 0 rgb(0,0,50,0.5);
+}
+.text-style::after
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index:-1;
+}
+.text-style::before
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index:-1;
+}
+
+
+/* Using Slick slider*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: auto;
+  padding-left: 200px;
+  padding-bottom: 50px;
+  width: 60%;
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.gallery h2
+{
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #227a5d;
+    font-family: 'Lobster',cursive;
+}
+.gallery h2::before
+{
+    content: '';
+    background: #6c9585;
+    height: 5px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(90px);
+}
+.gallery h2::after
+{
+    content: '';
+    background:#436e67;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: block;
+    transform: translateY(23px);
+}
+.gallery img
+{   
+    padding: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 30%;
+}
+.btn-choose
+{
+    width: 150px;
+    padding: 10px 0;
+    outline: none!important;
+    border: 0;
+    border-radius: 2px;
+    background: #69b84a;
+    cursor: pointer;
+}
+.btn-choose:hover
+  {
+  background: #b2eb9f;
+  
+  }
+
+  .gallery img:hover
+  {
+    transform: scale(1.2);
+  }
