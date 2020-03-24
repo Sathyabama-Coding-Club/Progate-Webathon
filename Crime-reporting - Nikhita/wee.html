@@ -14,6 +14,27 @@
 		.allbuttons{
 			border-radius: 50%;
 		}
+		.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50;
+}
+
+.topnav a.active {
+  color: #fed136;
+  font-family: "Cooper Black", serif;
+  font-size: 200%;
+}
+
 	</style>
 	<script>
 		var b0 = sessionStorage.getItem("a0");
@@ -67,6 +88,9 @@ document.getElementById("bbb").innerHTML=b1;
 	</script>
 </head>
 <body style="background-color: black;">
+	<div class="topnav">
+  <a class="active" > <strong> <> </strong> CrimeBot. </a>
+</div>
 	
 	
 	<h2 class="head"><CENTER>FIRST INFORMATION REPORT</CENTER></h2>
