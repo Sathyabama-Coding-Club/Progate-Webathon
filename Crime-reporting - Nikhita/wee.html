@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fir</title>
+	<style type="text/css">
+		.head{
+			color:#fed136;
+			font-family: "Cooper Black";
+		}
+		.printans{
+			font-family: "Cooper black";
+			color:white;
+		}
+		.allbuttons{
+			border-radius: 50%;
+		}
+	</style>
+	<script>
+		var b0 = sessionStorage.getItem("a0");
+		var b1 = sessionStorage.getItem("a1");
+		var b2 = sessionStorage.getItem("a2");
+		var b3 = sessionStorage.getItem("a3");
+		var b4 = sessionStorage.getItem("a4");
+		function aa(){
+			var b0 = sessionStorage.getItem("a0");
+			alert(b0);
+		}
+		var b0 = sessionStorage.getItem("a0");
+		var b1 = sessionStorage.getItem("a1");
+		var b2 = sessionStorage.getItem("a2");
+		var b3 = sessionStorage.getItem("a3");
+		var b4 = sessionStorage.getItem("a4");
+		function aa(){
+			var b0 = sessionStorage.getItem("a0");
+
+			document.getElementById("aaa").innerHTML=b0;
+		}
+		function bb(){
+			var b1 = sessionStorage.getItem("a1");
+
+			document.getElementById("bbb").innerHTML=b1;
+		}
+		function cc(){
+			var b2 = sessionStorage.getItem("a2");
+
+			document.getElementById("ccc").innerHTML=b2;
+		}
+		function dd(){
+			var b3 = sessionStorage.getItem("a3");
+
+			document.getElementById("ddd").innerHTML=b3;
+		}
+		function ee(){
+			var b4 = sessionStorage.getItem("a4");
+
+			document.getElementById("eee").innerHTML=b4;
+
+		}
+		console.log("aa");
+		console.log("bb");
+		console.log("cc");
+		console.log("dd");
+		console.log("ee");
+document.getElementById("eee").innerHTML=b4;
+document.getElementById("bbb").innerHTML=b1;
+
+	</script>
+</head>
+<body style="background-color: black;">
+	
+	
+	<h2 class="head"><CENTER>FIRST INFORMATION REPORT</CENTER></h2>
+	<br>
+	<br>
+	<h2 class="head"><center>Click on the buttons to view the confidential details</center></h2>
+	<div class="allbuttons" style="padding-left: 50%">
+<button onclick="aa()" style="border-radius: 20%" ><h5>Type of crime</h5></button>
+<p class="printans"><b id="aaa"></b></p>
+<button onclick="bb()" style="border-radius: 20%"><h5>Crime Location</h5></button>
+<p class="printans"><b id="bbb"></b></p>
+<button onclick="cc()" style="border-radius: 20%"><h5>Date and Time</h5></button>
+<p class="printans"><b id="ccc"></b></p>
+<button onclick="dd()" style="border-radius: 20%"><h5>Name and Aadhar card</h5></button>
+<p class="printans"><b id="ddd"></b></p>
+<button onclick="ee()" style="border-radius: 20%"><h5>Other Details</h5></button>
+<p class="printans"><b id="eee"></b></p>
+</div>
+</body>
+</html>
