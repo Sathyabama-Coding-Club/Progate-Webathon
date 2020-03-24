@@ -9,7 +9,7 @@ body {
   background-color: gray;
 }
 h1{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial;
   font-size: 50px;
   color: white;
 }
@@ -18,21 +18,21 @@ h2{
   color: white;
 }
 .title{
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 /*nav bar*/
 .navbar {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .navbar-light .navbar-brand {
-  color: #002b36;
+  color: #ee1010;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: -.7px;
   word-spacing: -2px;
 }
 .navbar-brand div {
-  color: green;
+  color: rgb(27, 230, 27);
   display: inline;
 }
 .navbar .row {
@@ -140,7 +140,7 @@ h2{
 
 /* window bootstrap alignments, primarily for line counter*/
 .col-sm-1 {
-  background-color: #1e404b;
+  background-color: #0e2a33;
   padding: 0;
   margin: 0;
 }
@@ -163,7 +163,7 @@ h2{
   position: relative;
   left: 110px;
   bottom: 70px;
-  color: #b58900;
+  color: #e2e60b;
 }
 .blinker {
   animation-name: blinker;
@@ -183,7 +183,7 @@ h2{
   from { opacity: 1.0; } to { opacity: 0.0; }
 }
 .correct {
-  color: #93a1a1;
+  color: #37e913;
 }
 .return:before {
   content: '\23CE';
@@ -200,7 +200,7 @@ pre span {
   font-size: 16px;
 }
 .incorrect{
-  background-color: #dc322f;
+  background-color: #eb3414;
 }
 
 /*statistics bottom row*/
@@ -218,27 +218,6 @@ pre span {
   font-size: 1.4rem;
   margin: 20px 0;
 }
-/*footer*/
-footer {
-  padding: 30px 0;
-  font-size: 14px;
-  color: white;
-  margin-top: 100px;
-  background-color: #292929;
-}
-footer h3 {
-  color: #f29519;
-  font-size: 22px;
-}
-footer a {
-  color: #93a1a1;
-}
-footer img {
-  margin-right: 10px;
-  position: relative;
-  bottom: 2px;
-}
-/*buttons */
 .results {
   background: #292929;
   color: white;
