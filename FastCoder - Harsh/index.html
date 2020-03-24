@@ -1,4 +1,7 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
       <title>FastCoder</title>
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
         <link rel="stylesheet" href="./style.css">
@@ -20,17 +23,11 @@
             <body>
               <audio id="mysoundclip" src="./audio/type.mp3"></audio>
               <div class="container-fluid text-center title">
-                <img src="coder.svg" alt="Coder" height="100" width="100">
+                <img src="coder.svg" alt="Kiwi standing on oval" height="100" width="100">
                 <h1>FastCoder</h1>
                 <h2>A Typing Game to see how fast a Coder you are!</h2>
               </div>
               <div class="container">
-                <!-- Choose language 
-                
-                
-
-                
-                -->
                 <div class="language">
                   <h2>Pick to kickstart!</h2>
                   <button class="btn btn-primary btn-lg active htmlinit" role="button" aria-pressed="true">HTML</button>
@@ -43,7 +40,6 @@
             High Scores
           </button>
                   </div>
-                  <!-- Stats Modal -->
                   <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -119,8 +115,102 @@
                     </div>
                   </div>
                 </div>
-                
-                 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+                <div class="console hide">
+                  <button class="btn btn-lg results hide" role="button" aria-pressed="true">Results</button>
+                  <button class="btn btn-lg results hide restart" role="button" aria-pressed="true">Retry</button>
+                  <div class = "tabindex hide">
+                    <img class = "html" src="./images/html.ico" />
+                    <p class="index">index.html</p>
+                    <img class="closeicon" src="./images/close.png" />
+                  </div>
+                  <div class = "tabjs hide">
+                    <img class = "html" src="./images/js.png" />
+                    <p class="index">script.js</p>
+                    <img class="closeiconjs" src="./images/close.png" />
+                  </div>
+                  <div class = "tabcss hide">
+                    <img class = "html" src="./images/css.png" />
+                    <p class="index">styles.css</p>
+                    <img class="closeiconcss" src="./images/close.png" />
+                  </div>
+                  <div class="tabs">
+                    <div class="tab">
+                      <div class="tab-box activetab"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <p id="first">1</p>
+                      <p>2</p>
+                      <p>3</p>
+                      <p>4</p>
+                      <p>5</p>
+                      <p>6</p>
+                      <p>7</p>
+                      <p>8</p>
+                      <p>9</p>
+                      <p>10</p>
+                    </div>
+                    <div class="col-sm-11">
+                      <pre></pre>
+                    </div>
+                  </div>
+                  <div class="container statistics">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <div class="errors">Errors: 0</div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="accuracy">Accuracy: 100%</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="speed">Characters Per Minute:</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class = "start">TYPE TO START...
+                    <i class="blinker"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">FINISH!</h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <div class="accreport"></div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="commonerror"></div>
+                          </div>
+                          <div class="col-md-4 ml-auto">
+                            <div class="speedreport"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="rank"></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="nextrank"></div>
+                      </div>
+                      <div class="row">
+                        <img class = "rankgif" src="#" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary restart" data-dismiss="modal">RETRY</button>
+                  </div>
+                </div>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
               <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
