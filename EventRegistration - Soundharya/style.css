@@ -208,16 +208,22 @@ span{
   font-size: 20px;
 }
 .query-wrapper{
-  background-color: black;
+  background-color:#2f5167;
   color:whitesmoke;
   font-size: 25px;
+  height:110px;
 }
 a:hover{
-  color:rgba(13, 242, 208, 0.73);
+  color:yellow;
 
 }
 
 a{
   letter-spacing: 3px;
   color:yellowgreen;
+}
+.footer{
+  background-color: black;
+  color:red;
+  height:600px;
 }
