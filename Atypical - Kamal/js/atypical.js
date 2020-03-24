@@ -15,7 +15,7 @@ function validateForm() {
     var pass = "root123";
     if(username==admin_email && password==pass){
         alert('Welcome Administrator!');
-        window.location = "../admin.html";
+        window.location.href = "admin.html";
         return false;
     }
     
